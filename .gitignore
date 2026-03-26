@@ -148,16 +148,32 @@ cython_debug/
 tmp
 .history
 .DS_Store
+main/xiaozhi-server/data
 
-/data
+main/manager-web/node_modules
 .config.yaml
 .secrets.yaml
 .private_config.yaml
 .env.development
 
 # model files
-models
-
+main/xiaozhi-server/models/SenseVoiceSmall/model.pt
+main/xiaozhi-server/models/sherpa-onnx*
+/main/xiaozhi-server/audio_ref/
+/audio_ref/
+/asr-models/iic/SenseVoiceSmall/
+/main/xiaozhi-server/asr-models/iic/SenseVoiceSmall/
+/models/SenseVoiceSmall/model.pt
+my_wakeup_words.mp3
+!main/xiaozhi-server/config/assets/bind_code.wav
+!main/xiaozhi-server/config/assets/wakeup_words.wav
+!main/xiaozhi-server/config/assets/bind_not_found.wav
+!main/xiaozhi-server/config/assets/bind_code/*.wav
+!main/xiaozhi-server/config/assets/max_output_size.wav
+main/manager-api/.vscode
+# Ignore webpack cache directory
+main/manager-web/.webpack_cache/
+main/xiaozhi-server/mysql
 uploadfile
 *.json
 .vscode
@@ -165,3 +181,9 @@ uploadfile
  
 !package.json
 !**/package.json
+
+# Do not ignore env and json files inside manager-mobile
+!main/manager-mobile/**/env/
+!main/manager-mobile/**/.env*
+!main/manager-mobile/**/*.json
+!main/xiaozhi-server/**/*.json
